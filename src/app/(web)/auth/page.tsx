@@ -14,7 +14,7 @@ export default function Auth() {
   const [formData, setFormData] = useState(defaultFormData);
 
   const inputStyles =
-    "border border-gray-300 sm:text-sm text-black rounded:lg block w-full p-2.5 focus:outline-none";
+    "border border-gray-300 sm:text-sm text-black rounded-lg block w-full p-2.5 focus:outline-none";
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -34,7 +34,7 @@ export default function Auth() {
 
   return (
     <section className="container mx-auto">
-      <div className="p-6 space-y-4 md:spae-y-6 sm:pd-8 w-80 md:w-[70%] mx-auto">
+      <div className="p-6 space-y-4 md:space-y-6 sm:pd-8 w-80 md:w-[70%] mx-auto">
         <div className="flex mb-8 flex-col md:flex-row items-center justify-between">
           <h1 className="text-xl font-bold leading-tight tracking-tight md:text-2xl">
             Create Account
