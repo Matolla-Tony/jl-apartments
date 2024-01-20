@@ -1,14 +1,14 @@
 import { defineField } from "sanity";
 
 const apartments = [
-  { title: "Diyani Suites", value: "Diyani Suites" },
-  { title: "Oasis Kwenet", value: "Oasis Kwenet" },
-  { title: "Oasis Ne Tai", value: "Oasis NeTai" },
+  { title: "Diyani-Suites", value: "Diyani-Suites" },
+  { title: "Oasis-Kwenet", value: "Oasis-Kwenet" },
+  { title: "Oasis-Ne-Tai", value: "Oasis-Ne-Tai" },
 ];
 
 const roomTypes = [
-  { title: "Single Room", value: "Single" },
-  { title: "Bed Sitter", value: "Bed Sitter" },
+  { title: "Single-Room", value: "Single-Room" },
+  { title: "Bed-Sitter", value: "Bed-Sitter" },
 ];
 
 const description = [
@@ -35,9 +35,9 @@ const rent = [
   { title: "6500", value: 6500 },
 ];
 
-const room = {
-  name: "room",
-  title: "Room",
+const apartmentRoom = {
+  name: "apartmentRoom",
+  title: "Apartment Room",
   type: "document",
   fields: [
     defineField({
@@ -95,7 +95,7 @@ const room = {
       type: "object",
       fields: [
         { name: "url", type: "url", title: "URL" },
-        { name: "file", type: "file", title: "FILE" },
+        { name: "file", type: "file", title: "File" },
       ],
       validation: (Rule) => Rule.required(),
     }),
@@ -118,4 +118,4 @@ const room = {
   ],
 };
 
-export default room;
+export default apartmentRoom;

@@ -1,7 +1,7 @@
 import account from "./account";
 import booking from "./booking";
-import room from "./room";
 import user from "./user";
 import verificationToken from "./verificationToken";
+import apartmentRoom from "./apartmentRoom";
 
-export const schemaTypes = [user, account, booking, room, verificationToken];
+export const schemaTypes = [user, account, booking, apartmentRoom, verificationToken];

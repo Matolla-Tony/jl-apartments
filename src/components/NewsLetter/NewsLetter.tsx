@@ -1,12 +1,12 @@
-const NewsLetter = () => {
+const VacantRoomNotification = () => {
   return (
     <section className='container mx-auto px-4'>
       <form className='bg-primary text-white px-4 rounded-xl md:rounded-[30px] flex flex-col justify-center items-center py-6 md:py-24'>
         <p className='md:font-semibold text-lg md:text-xl text-center mb-3'>
-          Explore More About Our Apartments
+          Get Email Notifications On Vacant Rooms
         </p>
         <h6 className='md:font-semibold font-medium text-2xl md:text-3xl lg:text-5xl text-center'>
-          Sign Up for Our Newsletter
+          Sign Up for Our Notifications
         </h6>
 
         <div className='flex-col justify-center w-full md:flex-row flex pt-12'>
@@ -24,4 +24,4 @@ const NewsLetter = () => {
   );
 };
 
-export default NewsLetter;
+export default VacantRoomNotification;

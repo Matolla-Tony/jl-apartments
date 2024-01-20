@@ -23,7 +23,7 @@ const ClientComponent: FC<Props> = props => {
             <CountUpNumber duration={1000} endValue={20} />
           </div>
           <div className='flex gap-3 flex-col items-center justify-center'>
-            <p className='text-xs lg:text-xl text-center'>Bed-Sitter</p>
+            <p className='text-xs lg:text-xl text-center'>Bed Sitter</p>
             <CountUpNumber duration={1000} endValue={15} />
           </div>
         </div>

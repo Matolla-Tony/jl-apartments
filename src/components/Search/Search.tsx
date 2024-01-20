@@ -28,7 +28,7 @@ const Search: FC<Props> = ({
 
   const handleFilterClick = () => {
     router.push(
-      `/rooms?roomType=${apartmentTypeFilter}&searchQuery=${roomTypeFilter}`
+      `/rooms?apartmentType=${apartmentTypeFilter}&roomType=${roomTypeFilter}`
     );
   };
 
@@ -46,10 +46,10 @@ const Search: FC<Props> = ({
               onChange={handleApartmentTypeChange}
               className="w-full px-4 py-2 capitalize rounded leading-tight dark:bg-black focus:outline-none"
             >
-              <option value="All-Apartments">All</option>
-              <option value="Diyani-Suites">Diyani Suites</option>
-              <option value="Oasis-Kwenet">Oasis Kwenet</option>
-              <option value="Oasis-Ne-Tai">Oasis Ne Tai</option>
+              <option value="All">All</option>
+              <option value="Diyani-Suites">Diyani-Suites</option>
+              <option value="Oasis-Kwenet">Oasis-Kwenet</option>
+              <option value="Oasis-Ne-Tai">Oasis-Ne-Tai</option>
             </select>
           </div>
         </div>
@@ -64,9 +64,9 @@ const Search: FC<Props> = ({
               onChange={handleRoomTypeChange}
               className="w-full px-4 py-2 capitalize rounded leading-tight dark:bg-black focus:outline-none"
             >
-              <option value="All-Rooms">All Rooms</option>
+              <option value="All">All</option>
               <option value="Bed-Sitter">Bed-Sitter</option>
-              <option value="Single">Single Room</option>
+              <option value="Single-Room">Single-Room</option>
             </select>
           </div>
         </div>

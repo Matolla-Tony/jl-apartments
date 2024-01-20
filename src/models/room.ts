@@ -14,11 +14,12 @@ type Slug = {
 
 export type Room = {
   _id: string;
-  name: string;
+  roomNameNumber: string;
+  apartment: string;
   slug: Slug;
   type: string;
-  description: string;
   rent: number;
+  description: string;
   isVacant: boolean;
   coverImage: CoverImage;
   images: Image[];
