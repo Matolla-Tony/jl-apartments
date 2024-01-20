@@ -58,7 +58,6 @@ const Rooms = () => {
   };
 
   const filteredRooms = filterRooms(data || []);
-  console.log(filteredRooms)
 
   return (
     <div className='container mx-auto pt-10'>

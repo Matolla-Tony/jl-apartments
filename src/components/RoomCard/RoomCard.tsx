@@ -10,7 +10,7 @@ type Props = {
 
 const RoomCard: FC<Props> = props => {
   const {
-    room: { coverImage, name, price, type, description, slug, isBooked },
+    room: { coverImage, apartment, roomNameNumber, rent, type, description, slug, isVacant },
   } = props;
 
   return (
@@ -18,7 +18,7 @@ const RoomCard: FC<Props> = props => {
       <div className='h-60 overflow-hidden'>
         <Image
           src={coverImage.url}
-          alt={name}
+          alt={apartment}
           width={250}
           height={250}
           className='img scale-animation'
@@ -26,20 +26,21 @@ const RoomCard: FC<Props> = props => {
       </div>
 
       <div className='p-4 bg-white'>
-        <div className='flex justify-between text-xl font-semibold'>
-          <p>{name}</p>
-          <p>$ {price}</p>
+        <div className='flex flex-col justify-between text-xl font-semibold'>
+          <p>{apartment}</p>
+          <p>{roomNameNumber}</p>
+          <p>Kes {rent}/=</p>
         </div>
 
-        <p className='pt-2 text-xs'>{type} Room</p>
+        <p className='pt-2 text-xs'>{type}</p>
 
-        <p className='pt-3 pb-6'>{description.slice(1, 100)}...</p>
+        <p className='pt-3 pb-6'>{description.slice(0, 100)}...</p>
 
         <Link
           href={`/rooms/${slug.current}`}
           className='bg-primary inline-block text-center w-full py-4 rounded-xl text-white text-xl font-bold hover:-translate-y-2 hover:shadow-lg transition-all duration-500'
         >
-          {isBooked ? 'BOOKED' : 'BOOK NOW'}
+          {isVacant ? 'BOOK NOW' : 'CURRENTLY OCCUPIED'}
         </Link>
       </div>
     </div>

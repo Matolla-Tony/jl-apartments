@@ -27,3 +27,17 @@ export const getRoomsQuery = groq`*[_type == "apartmentRoom"] {
     coverImage,
     images,
 }`;
+
+export const getRoomQuery = groq`*[_type == "apartmentRoom" && slug.current == $slug][0] {
+    _id,
+    roomNameNumber,
+    apartment,
+    slug,
+    type,
+    rent,
+    description,
+    isVacant,
+    rent,
+    coverImage,
+    images,
+}`;

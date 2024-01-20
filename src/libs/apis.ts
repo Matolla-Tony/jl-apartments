@@ -22,15 +22,14 @@ export async function getRooms() {
   return result;
 }
 
-// export async function getRoom(slug: string) {
-//   const result = await sanityClient.fetch<Room>(
-//     queries.getRoom,
-//     { slug },
-//     { cache: 'no-cache' }
-//   );
-
-//   return result;
-// }
+export async function getRoom(slug: string) {
+  const result = await sanityClient.fetch<Room>(
+    queries.getRoomQuery,
+    { slug },
+    { cache: 'no-cache' }
+  );
+  return result;
+}
 
 // export const createBooking = async ({
 //   adults,
