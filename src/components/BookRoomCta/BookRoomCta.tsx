@@ -40,7 +40,7 @@ const BookRoomCta: FC<Props> = props => {
             onChange={date => setMoveInDate(date)}
             dateFormat='dd/MM/yyyy'
             minDate={new Date()}
-            id='check-in-date'
+            id='move-in-date'
             className='w-full border text-black border-gray-300 rounded-lg p-2.5 focus:ring-primary focus:border-primary'
           />
         </div>
@@ -51,7 +51,7 @@ const BookRoomCta: FC<Props> = props => {
         onClick={handleBookNowClick}
         className='btn-primary w-full mt-6 disabled:bg-gray-500 disabled:cursor-not-allowed'
       >
-        {isVacant ? 'Currently Occupied' : 'Book Now'}
+        {isVacant ? 'BOOK NOW' : 'CURRENTLY OCCUPIED'}
       </button>
     </div>
   );
